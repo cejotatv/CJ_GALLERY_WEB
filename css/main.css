@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(92, 14, 155);
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+
+.nav{
+    flex: none; 
+    
+}
+.nav ul{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav ul li{
+    display: inline-block;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.nav a:hover{
+    color: rgb(87, 221, 152);
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/main.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+
+}
+
+.video iframe{
+    height:310px;
+    width:550px;
+
+}
+.form-contact{
+    background-color: #fff;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+    margin-top: 5%;
+}
+
+.form-contact span i{
+    width: 400px;
+    background-color: rgb(92, 14, 155);
+    overflow: hidden;
+    color: rgb(87, 221, 152);
+    font-size: 80px;
+    display: block;
+    text-align: center;
+    padding: 2.5rem;
+    
+}
+
+.contact{
+    padding: .8rem;
+    overflow: hidden;
+    color: gray;
+}
+
+.contact label, .contact input, .contact textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contact label{
+    font-weight: 700;
+}
+
+.contact input:not([type='submit']), .contact textarea{
+    border: none;
+    border-bottom: 2px solid rgb(92, 14, 155);
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+}
+
+input[type='submit']{
+    padding:  10px;
+    border: none;
+    background-color: rgb(92, 14, 155);
+    color: white ;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.logo h1{
+    
+    color: #fff;
+    font-size: 105px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px rgb(92, 14, 155);
+    text-align: center;
+    
+}
+
+.logo p{
+    font-size: 25px;
+    color: solid;
+    color: rgb(82, 192, 232);
+    background-color: #fff;
+    text-align: center;
+    margin: 30px 80px;
+    padding: 15px;
+    
+    
+}
+
+.logo a{
+    color: rgb(87, 221, 152);
+    text-decoration: none;
+    background-color: rgb(92, 14, 155);
+    font-size: 15px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 10px rgb(82, 192, 232);
+    border-radius: 8px;
+    margin: 80px;
+    
+}
+
+.logo a:hover{
+    background-color: #fff;
+}
+
+
+h2{
+    text-align: center;
+    background-color: rgb(92, 14, 155);
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+h3{
+    text-align: center;
+    background-image: linear-gradient( to left, rgb(92, 14, 155), rgb(82, 192, 232) );
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px 0px;
+    width: 100%;
+    border: 1px solid linear-gradient( to left, rgb(92, 14, 155), rgb(82, 192, 232) );
+    border-radius: 11px;
+}
+
+.section{
+    
+    width: 100%;
+    background-color:  rgb(87, 221, 152);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.caja{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    color: #fff;
+    border: 1px solid #fff;
+
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 12px;
+}
+.caja1{
+    background-image: url(/img/planta1.jpg);
+    background-size: cover;
+}
+
+.caja2{
+    background-image: url(/img/planta2.jpg);
+    background-size: cover;
+}
+
+.caja3{
+    background-image: url(/img/planta3.jpg);
+    background-size: cover;
+}
+
+.caja4{
+    background-image: url(/img/planta4.jpg);
+    background-size: cover;
+}
+
+.caja5{
+    background-image: url(/img/planta5.jpg);
+    background-size: cover;
+}
+
+
+
+.plt1{
+    background-image: url(/img/planta5.jpg);
+    background-size: cover;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.plt1:hover{
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+}
+.plt2{
+    background-image: url(/img/planta4.jpg);
+    background-size: cover;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.plt2:hover{
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+}
+.plt3{
+    background-image: url(/img/planta3.jpg);
+    background-size: cover;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.plt3:hover{
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+}
+
+.plt4{
+    background-image: url(/img/planta2.jpg);
+    background-size: cover;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.plt4:hover{
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+}
+.plt5{
+    background-image: url(/img/planta1.jpg);
+    background-size: cover;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.plt5:hover{
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 12px;
+    justify-items: center;
+    background-color: aquamarine;
+    color: #fff;
+    border: 1px solid #fff;
+    grid-template-areas: "div1 div2 div3"
+                         "div4 div5 div6";
+    }
+    
+    .div1 { 
+        background-image: url(/img/plant1.jpg);
+        background-size: cover;
+        grid-area: div1; 
+        -webkit-transition: 1s linear;
+        transition: 1s linear;
+    }
+    .div1:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .div2 { 
+        background-image: url(/img/plant2.jpg);
+        background-size: cover;
+        grid-area: div2; 
+        -webkit-transition: 1s linear;
+        transition: 1s linear;
+    }
+    .div2:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .div3 { 
+        background-image: url(/img/plant3.jpg);
+        background-size: cover;
+        grid-area: div3; 
+        -webkit-transition: 1s linear;
+        transition: 1s linear;
+    }
+    .div3:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .div4 { 
+        background-image: url(/img/planta4.jpg);
+        background-size: cover;
+        grid-area: div4; 
+        -webkit-transition: 1s linear;
+        transition: 1s linear;
+    }
+    .div4:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .div5 { 
+        background-image: url(/img/plant5.jpg);
+        background-size: cover;
+        grid-area: div5; 
+        -webkit-transition: 1s linear;
+        transition: 1s linear;
+    }
+    .div5:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .div6 { 
+        background-image: url(/img/plant6.jpg);
+        background-size: cover;
+        grid-area: div6; 
+        -webkit-transition: 1s linear;
+        transition: 1s linear;
+    }
+    .div6:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    
+footer{
+    height: auto;
+    width: 100%;
+    background-color:  rgb(92, 14, 155);
+    text-align: center;
+}
+
+footer p{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 20px; 
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+footer i{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 20px;
+    margin-bottom: 20px;
+}
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(87, 221, 152);
+    color: #fff;
+    border: 3px solid #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #333;
+
+}
+
+@media only screen and (max-width: 680px){
+    .parent{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "div1 div2" 
+    "div3 div4" 
+    "div5 div6";
+    }
+    .main-ctn{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .parent{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "div1" 
+        "div2" 
+        "div3" 
+        "div4" 
+        "div5" 
+        "div6";
+        }
+
+        .form-contact span i{
+            padding: 1px;
+        }
+        header{
+            padding: 1px;
+        }
+}
